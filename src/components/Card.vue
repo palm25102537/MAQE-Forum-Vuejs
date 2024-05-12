@@ -32,6 +32,7 @@ const cardClass = computed(() => {
           class="rounded-full max-w-[20px] max-h-[20px] basis-[20px]"
           :src="author_avatar"
           loading="lazy"
+          alt="author_avatar"
         />
         <div class="text-[12px] text-[#F5805F] font-semibold">{{ author }}</div>
         <div class="text-[12px] text-[#93ABBA] font-semibold">
@@ -47,6 +48,7 @@ const cardClass = computed(() => {
           class="w-full h-full max-w-[200px] max-h-[200px] basis-[200px]"
           :src="img"
           loading="lazy"
+          alt="post-image"
         />
 
         <section class="flex-1" id="post-detail">

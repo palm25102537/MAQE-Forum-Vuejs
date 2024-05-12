@@ -39,8 +39,6 @@ onBeforeMount(() => {
   isLoading.value = true;
   Promise.all([authorService.getAuthors, postService.getPosts])
     .then(([authors, posts]) => {
-      console.log(authors);
-      console.log(posts);
       allAuthors.value = authors as Author[];
       allPosts.value = posts as Post[];
     })
